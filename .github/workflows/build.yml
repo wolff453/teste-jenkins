@@ -2,7 +2,8 @@ name: Build
 on:
   push:
     branches:
-      - master # or the name of your main branch
+      - master
+      - branchTeste # or the name of your main branch
 jobs:
   build:
     name: Build
