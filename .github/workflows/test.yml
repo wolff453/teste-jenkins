@@ -13,7 +13,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: SonarCloud Scan
-        uses: sonarsource/sonarcloud-github-action@master
+      - name: SonarQube Scan
+        uses: sonarsource/sonarqube-scan-action@master
         env:
-          SONAR_TOKEN: c8628af1307d5e87bc3836a34ee8d529ef19ed1e
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
