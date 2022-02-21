@@ -8,4 +8,4 @@ function foo(a) {  // Noncompliant
 
   const obj = {
       password:'1234'
-  }
+  } 
