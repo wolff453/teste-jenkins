@@ -1,10 +1,11 @@
-console.log("ola")       
+function foo(a) {  // Noncompliant
+    let b = 12;
+    if (a) {
+      return b;
+    }
+    return b;
+  }
 
-console.log("teste2a");        
-
-
-teef
-3t3t3t3t
-b
-cscsccc
-    
+  const obj = {
+      password:'1234'
+  }
