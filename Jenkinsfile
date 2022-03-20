@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("INSTALL"){
             steps{
-                bat 'git checkout' + params.TAG
+                bat 'git checkout ' + params.TAG
             }
         }
     }
