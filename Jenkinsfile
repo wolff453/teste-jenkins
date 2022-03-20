@@ -1,10 +1,11 @@
 pipeline {
     agent any
     stages {
-        stage("INSTALL"){
+        stage("Git Checkout"){
             steps{
-                bat 'git checkout ' + params.TAG
+                bat "git checkout $params.TAG"
             }
         }
-    }
+
+     }
 }
