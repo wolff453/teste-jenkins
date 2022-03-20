@@ -7,5 +7,9 @@ pipeline {
                 git 'https://github.com/wolff453/teste-jenkins.git'
             }
         }
+        
+        stage("INSTALL"){
+            sh 'npm install'
+        }
     }
 }
