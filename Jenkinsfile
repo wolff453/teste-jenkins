@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("INSTALL"){
             steps{
-                bat params
+                bat 'Hello' + params.branch
             }
         }
     }
