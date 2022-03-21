@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build Project') {
             steps {
-            bat 'docker build -t ProjetoTeste .'
+            bat 'docker build -t teste .'
 
             }
         }
